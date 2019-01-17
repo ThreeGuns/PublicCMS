@@ -1,0 +1,38 @@
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="w3_agile_logo">
+				<h1><a href="index.html">Adorning<span>Interior Design</span></a></h1>
+			</div>
+			<div class="agileits_w3layouts_nav">
+				<div id="toggle_m_nav">
+					<div id="m_nav_menu" class="m_nav">
+						<div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
+						<div class="m_nav_ham" id="m_ham_2"></div>
+						<div class="m_nav_ham" id="m_ham_3"></div>
+					</div>
+				</div>
+				<div id="m_nav_container" class="m_nav wthree_bg">
+					<nav class="menu menu--sebastian">
+						<ul id="m_nav_list" class="m_nav menu__list">
+							<li class="m_nav_item menu__item" id="m_nav_item_1"> <a href="index.html" class="menu__link"> Home </a></li>
+							<#-- parentId:父分类ID,typeId:分类类型ID,allowContribute:["true":允许投稿,"false":不允许投稿,默认全部],pageIndex:页码,count:每页数据条数 -->
+							<@_categoryList parentId=parentId typeId=typeId allowContribute=allowContribute pageIndex=pageIndex count=count>
+								<#list page.list as a>
+									<li class="m_nav_item menu__item" id="moble_nav_item_2"> <a href="${a.url!}" class="menu__link"> ${a.name} </a> </li>
+								</#list>
+							</@_categoryList>
+
+							<#--li class="m_nav_item menu__item" id="m_nav_item_1"> <a href="index.html" class="menu__link"> Home </a></li>
+							<li class="m_nav_item menu__item" id="moble_nav_item_2"> <a href="services.html" class="menu__link"> Services </a> </li>
+							<li class="m_nav_item menu__item" id="moble_nav_item_3"> <a href="about.html" class="menu__link"> About Us </a> </li>
+							<li class="m_nav_item menu__item menu__item--current" id="moble_nav_item_4"> <a href="blog.html" class="menu__link"> Blog </a> </li>
+							<li class="m_nav_item menu__item" id="moble_nav_item_5"> <a href="mail.html" class="menu__link"> Contact Us </a> </li-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //banner -->	

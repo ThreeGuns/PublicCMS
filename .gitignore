@@ -5,3 +5,9 @@
 **/target
 **/build
 **/.svn/
+
+
+*.iml
+.DS_Store
+.idea
+.idea/vcs.xml
